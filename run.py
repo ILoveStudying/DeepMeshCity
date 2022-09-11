@@ -18,12 +18,12 @@ def set_seed(seed=0):
 
 
 if __name__ == '__main__':
-    cfg_filename = sys.argv[1]  # 配置文件名
-    data = sys.argv[2]  # 选择数据 osaka
+    cfg_filename = sys.argv[1]  # config filename
+    data = sys.argv[2]  # select osaka
     task = sys.argv[3]  # flow,density
-    mode = sys.argv[4]  # 运行模式，包括train,test
+    mode = sys.argv[4]  # mode: train,test
 
-    # 读取配置文件
+    # read config
     cfg = config.Config.fromfile('./Config/' + data + '/' + task + '/' + cfg_filename)
     print("config filename: " + str(cfg_filename))
 
@@ -38,10 +38,10 @@ if __name__ == '__main__':
     if not os.path.exists(cfg.train_cfg.gen_frm_dir):
         os.makedirs(cfg.train_cfg.gen_frm_dir)
 
-    # 训练模型
+    # train model
     if mode == 'train':
         trainer.train_main(cfg=cfg)
 
-    # 测试模型
+    # test model
     if mode == 'test':
         tester.test_main(cfg=cfg)
