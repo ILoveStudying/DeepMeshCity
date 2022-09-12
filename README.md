@@ -14,7 +14,7 @@ Bousai datasets are provided by Yahoo Japan Corporation. The dataset records the
 # Architecture
 The overall architecture of DeepMeshCity is depicted in the following figure. The proposed model has at its core a stack of SA-CGL (Self-Attention Citywide Grid Learner) blocks, which are designed to better handle the global spatial dependencies and the multi-scale spatial-temporal correlations.
 <div align=center>
-<img src="https://github.com/ILoveStudying/DeepMeshCity/blob/master/framework.png" width="70%" height="70%" > </div>
+<img src="https://github.com/ILoveStudying/DeepMeshCity/blob/master/framework.png" width="80%" height="80%" > </div>
 
 # Usage
 1. Download data. The Bousai datasets requires the permission from [ Yahoo! Japan](https://github.com/deepkashiwa20/DeepCrowd). However, [TaxiBJ](https://pan.baidu.com/s/1tGQRs5b4kXVkWpwo3WtoBA) can be directly obtained with code **u12b** .
