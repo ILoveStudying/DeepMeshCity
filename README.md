@@ -8,13 +8,13 @@ TaxiBJ is one of the most widely used traffic flow datasets in the literature Th
 
 Bousai datasets are provided by Yahoo Japan Corporation. The dataset records the location information of millions of users in Japan with a sampling interval of 30 minutes. The records of two big cities (Tokyo and Osaka) from 1 April 2017 to 9 July 2017 (100 days) are selected in our experiments. We refer to the corresponding datasets as BousaiTYO and BousaiOSA, respectively. The two cities are partitioned into $80 \times 80$ and $60 \times 60$ grid cells, respectively, with a grid cell size $450\text{m} \times 450\text{m}$. Consequently, the BousaiTYO dataset contains a crowd density tensor of size $4800 \times 80 \times 80 \times 1$ and a crowd flow tensor of size $4800 \times 80 \times 80 \times 2$, whereas the BousaiOSA dataset only contains a crowd density tensor of size $4800 \times 60 \times 60 \times 1$.
 
- <!--  <div align=center>
-<img src="https://github.com/ILoveStudying/DeepMeshCity/blob/master/prediction.png" width="50%" height="50%" > </div> -->
+<div align=center>
+<img src="https://github.com/ILoveStudying/DeepMeshCity/blob/master/prediction.png" width="50%" height="50%" > </div> 
 
 # Architecture
 The overall architecture of DeepMeshCity is depicted in the following figure. The proposed model has at its core a stack of SA-CGL (Self-Attention Citywide Grid Learner) blocks, which are designed to better handle the global spatial dependencies and the multi-scale spatial-temporal correlations.
- <!--   <div align=center>
-<img src="https://github.com/ILoveStudying/DeepMeshCity/blob/master/framework.png" width="80%" height="80%" > </div> -->
+ <div align=center>
+<img src="https://github.com/ILoveStudying/DeepMeshCity/blob/master/framework.png" width="80%" height="80%" > </div>
 
 # Usage
 1. Download data. The Bousai datasets requires the permission from [ Yahoo! Japan](https://github.com/deepkashiwa20/DeepCrowd). However, [TaxiBJ](https://pan.baidu.com/s/1tGQRs5b4kXVkWpwo3WtoBA) can be directly obtained with code **u12b** .
