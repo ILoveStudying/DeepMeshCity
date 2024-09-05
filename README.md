@@ -34,3 +34,27 @@ python run.py DeepMeshCity_osaka_density_config.py osaka density train/test
 
 python run.py DeepMeshCity_taxibj_flow_config.py taxibj flow train/test
 ```
+# Citation
+> Chi Zhang, Linhao Cai, Meng Chen, Xiucheng Li, and Gao Cong. 2024. DeepMeshCity: A Deep Learning Model for Urban Grid Prediction. ACM Trans. Knowl. Discov. Data 18, 6, Article 148 (July 2024), 26 pages. https://doi.org/10.1145/3652859
+
+```
+@article{10.1145/3652859,
+author = {Zhang, Chi and Cai, Linhao and Chen, Meng and Li, Xiucheng and Cong, Gao},
+title = {DeepMeshCity: A Deep Learning Model for Urban Grid Prediction},
+year = {2024},
+issue_date = {July 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {18},
+number = {6},
+issn = {1556-4681},
+url = {https://doi.org/10.1145/3652859},
+doi = {10.1145/3652859},
+abstract = {Urban grid prediction can be applied to many classic spatial-temporal prediction tasks such as air quality prediction, crowd density prediction, and traffic flow prediction, which is of great importance to smart city building. In light of its practical values, many methods have been developed for it and have achieved promising results. Despite their successes, two main challenges remain open: (a) how to well capture the global dependencies and (b) how to effectively model the multi-scale spatial-temporal correlations? To address these two challenges, we propose a novel method—DeepMeshCity, with a carefully-designed Self-Attention Citywide Grid Learner (SA-CGL) block comprising of a self-attention unit and a Citywide Grid Learner (CGL) unit. The self-attention block aims to capture the global spatial dependencies, and the CGL unit is responsible for learning the spatial-temporal correlations. In particular, a multi-scale memory unit is proposed to traverse all stacked SA-CGL blocks along a zigzag path to capture the multi-scale spatial-temporal correlations. In addition, we propose to initialize the single-scale memory units and the multi-scale memory units by using the corresponding ones in the previous fragment stack, so as to speed up the model training. We evaluate the performance of our proposed model by comparing with several state-of-the-art methods on four real-world datasets for two urban grid prediction applications. The experimental results verify the superiority of DeepMeshCity over the existing ones. The code is available at https://github.com/ILoveStudying/DeepMeshCity.},
+journal = {ACM Trans. Knowl. Discov. Data},
+month = {apr},
+articleno = {148},
+numpages = {26},
+keywords = {Spatial-temporal prediction, crowd/traffic flow prediction, urban computing}
+}
+```
